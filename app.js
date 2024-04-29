@@ -7,3 +7,7 @@ app.get('/',(req,res)=>{
 app.listen(port,()=>{
     console.log(`example app listeningon port ${port}`)
 })
+
+app.get('/homepg',(req,res)=>{
+    res.send('home page')
+})
