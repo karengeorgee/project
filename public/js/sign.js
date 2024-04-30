@@ -23,11 +23,11 @@ popup.classList.add("open-popup");
 function closePopup() {
   var userType = document.querySelector('select[name="UserType"]').value;
   if (userType === "Admin") {
-    window.location.href = "bgrb.html"; // Redirect to admin dashboard
+    window.location.href = "/bgrb"; // Redirect to admin dashboard
   } else if (userType === "User") {
-    window.location.href = "userdash.html"; // Redirect to user dashboard
+    window.location.href = "/userdash"; // Redirect to user dashboard
   } else {
-    window.location.href = "SJAK.html"; // Redirect to default page
+    window.location.href = "/SJAK"; // Redirect to default page
   }
 }
 

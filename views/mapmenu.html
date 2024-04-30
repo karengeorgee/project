@@ -5,13 +5,25 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Interactive Map Menu</title>
   <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
-  <link rel="stylesheet" href="mapwmenu.css" />
-  <a href="mapmenu.html">reserve</a>
-
+  <link rel="stylesheet" href="/css/mapwmenu.css" />
+  <!-- <a href="/mapmenu">reserve</a> -->
+  <style>
+    body {
+font-family: 'Poppins', sans-serif;
+margin: 0;
+height:100vh;
+padding: 0;
+background-position: center;
+background-attachment: fixed;
+    background-image: url("/images/f3847d_da686092542e48e5a962f3b1e69456d5mv2-ezgif.com-webp-to-jpg-converter.jpg");
+    background-size: cover; /* Cover the entire background */
+    background-repeat: no-repeat; /* Prevent the image from repeating */
+}
+</style>
 </head>
 <body>
   <div id="logo">
-    <img src="C:\Users\DELL\Documents\GitHub\project\views\Untitled-1.png" alt="Logo" style="width: 100%;">
+    <img src="/images/Untitled-1.png" alt="Logo" style="width: 100%;">
   </div>
   <h1>
     Welcome to SJAK
@@ -33,9 +45,7 @@
     <button onclick="skipGuess()">Skip and Show Menu</button>
   </div>
   <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
-  <script src="mapmenu.js"></script>
-  <div id="background">
-    <img src="C:\Users\DELL\Downloads\pexels-pixabay-260922.jpg" alt="Flowers in Chania">
-  </div>
+  <script src="/js/mapmenu.js"></script>
+  
 </body>
 </html>

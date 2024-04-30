@@ -5,12 +5,6 @@ function toggleMenu() {
 }
 
 // Array of background image URLs
-var backgroundImages = [
-    'https://archello.s3.eu-central-1.amazonaws.com/images/2023/07/06/pedrali-khufu--039-s-restaurant-restaurants-archello.1688626959.6432.jpg',
-    'https://archello.s3.eu-central-1.amazonaws.com/images/2023/07/06/pedrali-khufu--039-s-restaurant-restaurants-archello.1688626957.0384.jpg',
-    'https://archello.s3.eu-central-1.amazonaws.com/images/2023/07/06/pedrali-khufu--039-s-restaurant-restaurants-archello.1688626959.0393.jpg',
-    'https://scenenow.com/Content/editor_api/images/S%20Khufu\'s_Restaurant_46-8118adc5-73ed-487e-a948-6b7cbdfecacb.jpg'
-];
 
 var currentImageIndex = 0;
 
