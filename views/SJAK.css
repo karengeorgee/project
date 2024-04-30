@@ -1,0 +1,158 @@
+/* Reset default margin and padding */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+/* Header styles */
+header {
+    position: relative; /* Ensure proper positioning of the top bar */
+    background-color: transparent;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'Arial', sans-serif; /* Choose a professional font */
+    font-size: 28px;
+    color: #333; /* Adjust the color to fit your color scheme */
+    text-transform: uppercase; /* Optional: Make the text uppercase for a more polished look */
+    letter-spacing: 2px; /* Optional: Add letter spacing for clarity */
+    margin: 0; /* Remove any default margins */
+    padding: 10px 20px; /* Add padding to provide spacing */
+}
+
+/* Menu toggle styles */
+.menu-toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1001; /* Ensure it's above the grey background */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #333;
+    margin: 4px 0;
+}
+
+/* Transparent grey background for menu toggle */
+.menu-toggle::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(128, 128, 128, 0.5); /* Grey color with transparency */
+    border-radius: 50%;
+    z-index: -1;
+    opacity: 0; /* Initially transparent */
+    transition: opacity 0.3s ease;
+}
+
+.menu-toggle:hover::before {
+    opacity: 1; /* Show the background on hover */
+}
+
+/* Menu items styles */
+.menu-items {
+    position: fixed;
+    top: 80px;
+    right: 20px;
+    background-color: rgba(128, 128, 128, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.menu-items.show {
+    display: block;
+}
+
+.menu-items a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    transition: color 0.3s ease;
+}
+
+.menu-items a:hover {
+    color: #ffcc00;
+}
+
+/* Button styles */
+.book-button {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 20px 40px;
+    background-color: rgba(128, 128, 128, 0.5);
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 18px;
+    transition: color 0.3s, border-color 0.3s;
+    overflow: hidden;
+}
+
+.book-button:hover {
+    color: #ffcc00;
+    border-color: #ffcc00;
+}
+
+.book-button span {
+    display: inline-block;
+    animation: bounce 0.5s infinite alternate;
+}
+
+@keyframes bounce {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-5px);
+    }
+}
+
+.calendar {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1001; /* Ensure calendar is above other elements */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Initially hidden */
+}
+
+

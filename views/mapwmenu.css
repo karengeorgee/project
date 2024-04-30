@@ -1,0 +1,26 @@
+#map { height: 400px; margin-top: 165px;}
+#background{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: -1; /* Ensure the image is behind other content */
+}
+#guessContainer {
+  position: relative; 
+  z-index: 1; /* Ensure the guessing game appears above the image */
+  color: antiquewhite;
+} 
+h1{
+  text-align: center;
+  color: antiquewhite;
+  margin-top: 60px;
+}
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1; /* Ensure the logo appears above the image */
+  width: auto; /* Adjust width relative to its container */
+  max-width: 10%; /* Maximum width as a percentage of the viewport */
+}

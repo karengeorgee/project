@@ -1,0 +1,143 @@
+
+
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .field {
+    margin-bottom: 20px;
+  }
+  
+  .Field-label {
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .required-astrerisk {
+    color: red;
+  }
+  
+  .field-small-p {
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .textfield,
+  select,
+  input[type="number"],
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  
+  .select p {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  
+  input[type="submit"] {
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="submit"]:hover {
+    background-color: #e68a00;
+  }
+  
+  
+  .container {
+   position: relative;
+   margin-top: 100px;
+   width: 350px;
+   height: auto;
+   background: #dedede;;
+  }
+  
+  .Field-label {
+    color: #8b4513;
+    font-size: larger;
+  }
+  
+  .required-astrerisk {
+    color: #ff0000;
+  }
+  
+  input[type="submit"] {
+    background-color:rgb(177, 139, 43);
+  }
+  
+  input[type="submit"]:hover {
+    background-color:gold;
+  }
+  
+  .close-btn{
+    position: absolute;
+    right: 20px; 
+    top: 20px;
+    width: 30px;
+    background: #222;
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 30px;
+    text-align: center;
+    border-radius: 50%;
+  }
+  .popup{
+    width: 400px;
+    background: #fff;
+    border-radius: 6px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+    padding: 0 30px 30px;
+    color: #333;
+    visibility: hidden;
+    transform: 0.4s,top 0.4s;
+  }
+  .open-popup{
+    visibility: visible;
+  }
+  .popup img{
+    width:100px ;
+    margin-top: -20%;
+    border-radius: 50%;
+    box-shadow: 0 20px 5px rgba(0, 0, 0, 0.2);
+  }
+  .popup button{
+    width: 100%;
+    margin-top: 50px;
+    padding: 10px;
+    background:yellowgreen;
+  color: #fff;
+  border: 0;
+  outline: none;
+  font-size: 18px;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  }
