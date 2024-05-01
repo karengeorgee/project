@@ -26,9 +26,7 @@ function closePopup() {
     window.location.href = "/bgrb"; // Redirect to admin dashboard
   } else if (userType === "User") {
     window.location.href = "/userdash"; // Redirect to user dashboard
-  } else {
-    window.location.href = "/SJAK"; // Redirect to default page
-  }
+  } 
 }
 
 
