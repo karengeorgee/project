@@ -1,3 +1,7 @@
 git add .
 git commit -m "before node setup"
 git push origin tamor
+
+
+git checkout .....
+git pull origin ....

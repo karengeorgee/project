@@ -79,7 +79,7 @@ input[type="submit"]:hover {
  margin-top: 100px;
  width: 350px;
  height: auto;
- background:red;
+ background:transparent;
 }
 
 .Field-label {

@@ -28,7 +28,7 @@ header {
     letter-spacing: 2px; /* Optional: Add letter spacing for clarity */
     margin: 0; /* Remove any default margins */
     padding: 0px; /* Add padding to provide spacing */
-    position: absolute; /* Set the logo to absolute positioning */
+    position: center; /* Set the logo to absolute positioning */
 }
 
 /* Menu toggle styles */
@@ -79,7 +79,7 @@ header {
     position: fixed;
     top: 80px;
     right: 20px;
-    background-color: rgba(128, 128, 128, 0.8);
+    background-color: transparent;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
