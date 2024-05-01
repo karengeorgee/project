@@ -1,4 +1,18 @@
-#map { height: 400px; margin-top: 165px;}
+#map { height: 400px; width: 50%;
+margin-left: 430px;}
+#map-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50vh; /* Set height to 100% of the viewport height */
+  margin-bottom: 0; /* Remove bottom margin */
+
+}
+body{
+  margin:0%;
+  padding: 0%;
+  
+}
 #background{
   position: fixed;
   top: 0;
@@ -10,21 +24,15 @@
   position: relative; 
   z-index: 1; /* Ensure the guessing game appears above the image */
   color: antiquewhite;
+  margin-left: 30%;
+
 } 
 h1{
   text-align: center;
   color:rgb(197, 172, 74);
   margin-top: 60px;
 }
-#logo {
-  position: fixed;
-  top: 20px;
-  left: 20px;
-  z-index: 1; /* Ensure the logo appears above the image */
-  width: auto; /* Adjust width relative to its container */
-  max-width: 10%; /* Maximum width as a percentage of the viewport */
-}
-
+ 
 .container {
   position: relative;
   margin-top: 100px;
@@ -42,6 +50,8 @@ h1{
   border-radius: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   background: rgba(0, 0, 0, 0.5); 
+  margin-right: 4000px;
+
 
  }
 
@@ -92,3 +102,35 @@ input[type="text"]
   color: whitesmoke;
 }
 
+.logo {
+  max-width: 300px; /* Adjust max-width as needed */
+  text-align: center;
+  margin-left: 640px;
+
+}
+.logo img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Ensures the image behaves like a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+}
+#word-container {
+  text-align: center; /* Center-align the word */
+  margin-bottom: 50px; /* Adjust the bottom margin to create space between the word and the map */
+  margin-top: 9px;
+}
+
+#word-container p {
+  font-family: 'Satisfy', sans-serif; /* Specify the different font for the word */
+  font-size: 18px; /* Adjust the font size of the word */
+  color:goldenrod; /* Adjust the color of the word */
+  font-size: 45px;
+  text-align: center;
+}
+#word-container img {
+  width: 44px; /* Adjust the width of the icon */
+  height: 44px; /* Adjust the height of the icon */
+  vertical-align: middle; /* Align the icon vertically with the text */
+  margin-left: 8px; /* Adjust the spacing between the word and the icon */
+
+}
