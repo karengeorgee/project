@@ -13,7 +13,7 @@
 } 
 h1{
   text-align: center;
-  color: antiquewhite;
+  color:rgb(197, 172, 74);
   margin-top: 60px;
 }
 #logo {
@@ -24,3 +24,71 @@ h1{
   width: auto; /* Adjust width relative to its container */
   max-width: 10%; /* Maximum width as a percentage of the viewport */
 }
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 350px;
+  height: auto;
+  /* background: rgba(255, 255, 255, 0.5); White color with 50% opacity */
+
+ }
+ 
+ .container {
+  max-width: 800px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  background: rgba(0, 0, 0, 0.5); 
+
+ }
+
+
+.textfield,
+input[type="text"]
+ {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+}
+
+.field {
+  margin-bottom: 20px;
+}
+
+.Field-label {
+  font-size: 18px;
+  color: whitesmoke;
+  font-family: 'Cormorant Garamond', sans-serif; /* Specify the different font for the word */
+}
+.subbut{
+
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+ 
+}
+.menubut{
+
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  box-sizing: border-box;
+  background-color:rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+}
+
