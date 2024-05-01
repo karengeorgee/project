@@ -1,0 +1,67 @@
+
+<title>Resrvation</title>
+
+
+<link rel="stylesheet" href="/css/Reservation.css">
+<style>
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  height:100vh;
+  padding: 0;
+  background-position: center;
+  background-attachment: fixed;
+      background-image: url("/images/f3847d_da686092542e48e5a962f3b1e69456d5mv2-ezgif.com-webp-to-jpg-converter.jpg");
+      background-size: cover; /* Cover the entire background */
+      background-repeat: no-repeat; /* Prevent the image from repeating */
+  }
+</style>
+<div id="logo">
+  <img src="/images/Untitled-1.png" alt="Logo" style="width: 100%;">
+</div>
+<div class="container">
+<div class="field">
+<label class="Field-label">Your information:
+  <i class="required-astrerisk booked-icon booked-icon-required"></i>
+</label>
+<p class="field-small-p">Please enter your fist name, last name and email address</p>
+</div>
+<body>
+  <!-- <form name="Valform" method="post" onsubmit="return validate()"> -->
+   <input  id="fn" value placeholder="First Name..." type="text" class="textfield" name="guest_name" >
+  <input id="ln" value placeholder="last Name..." type="text" class="textfield" name="guest_surname"><br><br>
+  <input  id="em" type="email" name="email" placeholder="name@example.com"><br>
+  <div class="select">
+  <p class="textcol">preferred seating</p>
+  <select name="table">
+    <option value="outdoor">outdoor</option>
+    <option value="indoor">indoor</option>
+    </select>
+
+    <p class="textcol"> number of seats</p>
+    <input id="sn" type="number" name="no-seats">
+    
+
+</div>
+<br>
+
+  <input type="submit" onclick='validate()' value="reserve"> 
+
+</div>
+</div>
+
+  </form> 
+
+
+
+  
+  <div class="popup" id="popup">
+    <img src="/images/WhatsApp Image 2024-04-29 at 11.01.35 PM.jpeg">
+  <h1 class="MesPopup">Thank you!</h1>
+  <p class="MesPopup">Your details has been successfully submitted.Thanks !</p>
+  <button type="button" onclick='closePopup()'>OK</button>
+  </div>
+</body>
+<script src="/js/Reservation.js"></script>
+
+  
