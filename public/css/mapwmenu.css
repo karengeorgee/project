@@ -34,7 +34,7 @@ h1{
 }
  
 .container {
-  position: relative;
+  position:relative;
   margin-top: 100px;
   width: 350px;
   height: auto;
@@ -106,10 +106,11 @@ input[type="text"]
   max-width: 300px; /* Adjust max-width as needed */
   text-align: center;
   margin-left: 640px;
+  position:relative;
 
 }
 .logo img {
-  max-width: 100%;
+  max-width: auto;
   height: auto;
   display: block; /* Ensures the image behaves like a block element */
   margin: 0 auto; /* Centers the image horizontally */
