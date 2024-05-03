@@ -48,6 +48,9 @@ app.get('/login', (req, res) => {
 app.get('/Reservation', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'Reservation.html'));
 });
+// app.get('/admindash', (req, res) => {
+//     res.sendFile(path.join(__dirname, 'views', 'admindash.html'));
+// });
 // Catch-all route for undefined routes
 app.get('*', (req, res) => {
     res.status(404).send('Page not found');

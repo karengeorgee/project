@@ -108,13 +108,13 @@ input[type="text"]
   margin-left: 640px;
   position:relative;
 
-}
+ }
 .logo img {
   max-width: auto;
   height: auto;
   display: block; /* Ensures the image behaves like a block element */
-  margin: 0 auto; /* Centers the image horizontally */
-}
+   margin: 0 auto; /* Centers the image horizontally */
+} 
 #word-container {
   text-align: center; /* Center-align the word */
   margin-bottom: 50px; /* Adjust the bottom margin to create space between the word and the map */

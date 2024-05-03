@@ -1,12 +1,4 @@
   
-  
-  
-  
-  
-  
-  
-  
-  
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -23,25 +15,13 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.field {
-  margin-bottom: 20px;
-}
-
-.Field-label {
-  font-size: 18px;
-  color: #333;
-}
-
-.required-astrerisk {
-  color: red;
-}
 
 .field-small-p {
   font-size: 14px;
   color:whitesmoke;
 }
 
-.textfield,
+ .textfield,
 select,
 input[type="number"],
 input[type="submit"] {
@@ -53,7 +33,7 @@ input[type="submit"] {
   box-sizing: border-box;
   background: rgba(0, 0, 0, 0.5);
   color: whitesmoke;
-}
+} 
 
 .select p {
   font-size: 16px;

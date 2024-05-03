@@ -1,0 +1,129 @@
+ 
+
+
+.container {
+  position: relative;
+  margin-top: 100px;
+  width: 350px;
+  height: auto;
+  background: rgba(0, 0, 0, 0.5);
+  
+  
+ }
+ 
+ .container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+ }
+
+
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1; /* Ensure the logo appears above the image */
+  width: auto; /* Adjust width relative to its container */
+  max-width: 10%; /* Maximum width as a percentage of the viewport */
+}
+
+.viewbut{
+  background-color: #340d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.viewbut:hover{
+  background-color: #361111;
+}
+
+.addbut{
+  background-color: #340d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.addbut:hover{
+  background-color: #361111;
+}
+.deletebut{
+  background-color: #340d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px ;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.deletebut:hover{
+  background-color: #361111;
+}
+.vprobut{
+  background-color: #340d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.vprobut:hover{
+  background-color: #361111;
+}
+.adprobut{
+  background-color: #340d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.adprobut:hover{
+  background-color: #361111;
+}
+.homebut{
+  background-color: #340d0d;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+.homebut{
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 15px ;
+  
+  border-radius: 5px;
+  box-sizing: border-box;
+  background:  #340d0d;
+  color: whitesmoke;
+}
+.homebut:hover{
+  background-color: #361111;
+}
+
+h1{
+  color: whitesmoke;
+  }
+  h2{
+  color: whitesmoke;
+  }
+  
