@@ -31,6 +31,6 @@ function openPopup(){
 
 }
 function closePopup(){
- ; window.location.href = "/SJAK";
+  window.location.href = "/SJAK";
 }
 

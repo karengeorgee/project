@@ -2,27 +2,11 @@
 function toggleMenu() {
     var menuItems = document.getElementById("menuItems");
     menuItems.classList.toggle("show");
+    
 }
-
-// Array of background image URLs
-
-var currentImageIndex = 0;
-
-// Function to change the background image
-function changeBackgroundImage() {
-    document.body.style.backgroundImage = 'url("' + backgroundImages[currentImageIndex] + '")';
-    currentImageIndex = (currentImageIndex + 1) % backgroundImages.length;
-}
-
-// Call the function initially to set the first background image
-changeBackgroundImage();
-
-// Set an interval to call the function every 5 seconds (5000 milliseconds)
-setInterval(changeBackgroundImage, 5000);
-
 
 // Initialize Flatpickr for the calendar widget
-flatpickr("#calendar", {
+var calendar = flatpickr("#calendar", {
     enableTime: true, // Allow selecting time as well
     dateFormat: "Y-m-d H:i", // Format of the selected date and time
     minDate: "today", // Minimum selectable date is today
@@ -31,10 +15,48 @@ flatpickr("#calendar", {
 
 // Show the calendar when the "BOOK YOUR TABLE" button is clicked
 document.querySelector(".book-button").addEventListener("click", function() {
-    document.getElementById("calendar").style.display = "block";
+    // Open the calendar
+    calendar.open();
 });
 
+// Create a "Done" button inside the calendar
+var doneButton = document.createElement('button');
+doneButton.innerHTML = 'Done';
+doneButton.id = 'done-button';
 
 
+// Add an event listener to the "Done" button to close the calendar
+doneButton.addEventListener("click", function() {
+    calendar.close();
+     window.location.href = "/Reservation";
+});
 
+// Append the "Done" button to the calendar container
+calendar.calendarContainer.appendChild(doneButton);
+
+document.addEventListener("DOMContentLoaded", function() {
+    const images = document.querySelectorAll(".images-container img");
+
+    function fadeInImages() {
+        images.forEach((image, index) => {
+            if (isElementInViewport(image)) {
+                setTimeout(() => {
+                    image.style.opacity = 1;
+                }, index * 300); // Adjust delay between images
+            }
+        });
+    }
+
+    function isElementInViewport(el) {
+        var rect = el.getBoundingClientRect();
+        return (
+            rect.top >= 0 &&
+            rect.left >= 0 &&
+            rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+            rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+        );
+    }
+
+    window.addEventListener("scroll", fadeInImages);
+});
 
