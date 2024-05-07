@@ -1,25 +1,19 @@
-// JavaScript for User dashboard
-
 function viewreservations() {
-    // Add logic to view products
+    window.location.href = '/view'; // Navigate to view reservations page in the same tab
 }
 
 function searchreservations() {
-    // Add logic to search for appointments
+    window.location.href = '/searchreservations'; // Navigate to search reservations page in the same tab
 }
 
 function bookyourtable() {
-    // Add logic to book an appointment
+    window.location.href = '/SJAK'; // Navigate to home page in the same tab
 }
 
 function viewHistory() {
-    // Add logic to view order history
+    window.location.href = '/myhis'; // Navigate to view history page in the same tab
 }
+
 function goToHomePage() {
-    window.location.href = 'SJAK'; // Redirect to the home page
+    window.location.href = '/SJAK'; // Navigate to home page in the same tab
 }
-
-
-
-
-

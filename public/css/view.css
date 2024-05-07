@@ -1,0 +1,21 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1; /* Ensure the logo appears above the image */
+    width: auto; /* Adjust width relative to its container */
+    max-width: 10%; /* Maximum width as a percentage of the viewport */
+  }
+  h1 {
+    display: block;
+    text-align: center;
+    color: antiquewhite;
+    padding-top: 100px;
+    /* background:rgba(0, 0, 0, 0.5); */
+
+}

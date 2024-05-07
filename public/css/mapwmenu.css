@@ -4,8 +4,8 @@ margin-left: 430px;}
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 50vh; /* Set height to 100% of the viewport height */
-  margin-bottom: 0; /* Remove bottom margin */
+  height: 50vh; 
+  margin-bottom: 0; 
 
 }
 body{
@@ -18,11 +18,11 @@ body{
   top: 0;
   left: 0;
   width: 100%;
-  z-index: -1; /* Ensure the image is behind other content */
+  z-index: -1; 
 }
 #guessContainer {
   position: relative; 
-  z-index: 1; /* Ensure the guessing game appears above the image */
+  z-index: 1; 
   color: antiquewhite;
   margin-left: 30%;
 
@@ -76,7 +76,7 @@ input[type="text"]
 .Field-label {
   font-size: 18px;
   color: whitesmoke;
-  font-family: 'Cormorant Garamond', sans-serif; /* Specify the different font for the word */
+  font-family: 'Cormorant Garamond', sans-serif; 
 }
 .subbut{
 
@@ -103,7 +103,7 @@ input[type="text"]
 }
 
 .logo {
-  max-width: 300px; /* Adjust max-width as needed */
+  max-width: 300px; 
   text-align: center;
   margin-left: 640px;
   position:relative;
@@ -112,26 +112,26 @@ input[type="text"]
 .logo img {
   max-width: auto;
   height: auto;
-  display: block; /* Ensures the image behaves like a block element */
-   margin: 0 auto; /* Centers the image horizontally */
+  display: block;
+   margin: 0 auto; 
 } 
 #word-container {
-  text-align: center; /* Center-align the word */
-  margin-bottom: 50px; /* Adjust the bottom margin to create space between the word and the map */
+  text-align: center; 
+  margin-bottom: 50px; 
   margin-top: 9px;
 }
 
 #word-container p {
-  font-family: 'Satisfy', sans-serif; /* Specify the different font for the word */
-  font-size: 18px; /* Adjust the font size of the word */
-  color:goldenrod; /* Adjust the color of the word */
+  font-family: 'Satisfy', sans-serif; 
+  font-size: 18px; 
+  color:goldenrod; 
   font-size: 45px;
   text-align: center;
 }
 #word-container img {
-  width: 44px; /* Adjust the width of the icon */
-  height: 44px; /* Adjust the height of the icon */
-  vertical-align: middle; /* Align the icon vertically with the text */
-  margin-left: 8px; /* Adjust the spacing between the word and the icon */
+  width: 44px; 
+  height: 44px; 
+  vertical-align: middle; 
+  margin-left: 8px; 
 
 }
