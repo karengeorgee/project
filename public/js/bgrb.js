@@ -24,7 +24,7 @@ function viewReservations() {
     console.log("Adding a new product...");
 }
 function goToHomePage() {
-    window.location.href = "SJAK.html"; // Redirect to the home page
+    window.location.href = "SJAK"; // Redirect to the home page
 }
 
 

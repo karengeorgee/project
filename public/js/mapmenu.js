@@ -59,7 +59,8 @@ function checkGuess() {
 
 // Function to skip guessing and directly show the menu
 function skipGuess() {
-  const guessInput = document.getElementById('guessInput');
-  const menu = guessInput.getAttribute('data-menu');
-  showMenu(menu);
+  // const guessInput = document.getElementById('guessInput');
+  // const menu = guessInput.getAttribute('data-menu');
+  // showMenu(menu);
+  window.location.href = "/SJAK";
 }

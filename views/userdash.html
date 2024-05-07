@@ -3,6 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/css/userdash.css" />
+  <div id="logo">
+    <img src="/images/Untitled-1.png" alt="Logo" style="width: 100%;">
+  </div>
   <title>User Dashboard</title>
   <style>
     body {
@@ -18,24 +22,26 @@ background-attachment: fixed;
 }
 </style>
 </head>
-<body>
+
+  <div class="Container">
+    <div class="weldiv">
   <h1>Welcome to the User Dashboard!</h1>
-  <div>
+  </div>
     <h2>View Reservaions</h2>
-    <button onclick="viewreservations()">View Reservaions</button>
-    <button onclick="searchreservations()">Search Reservaions</button>
-  </div>
-  <div>
+    <button onclick="viewreservations()" class="viewbut">View Reservations</button>
+    <button onclick="searchreservations()" class="searchbut">Search Reservations</button>
+  
+  
     <h2>Book your table</h2>
-    <button onclick="bookyourtable()">Book your table</button>
-  </div>
-  <div>
+    <button onclick="bookyourtable()" class="bookbut">Book your table</button>
+  
     <h2>View History</h2>
-    <button onclick="viewHistory()">View Booking History</button>
-  </div>
+    <button onclick="viewHistory()" class="historybut">View Booking History</button>
+  
  
-  <button onclick="goToHomePage()">Homeeeeeeeeeeeeeeeeeeeeeeeeeee</button>
-</body>
+  <button onclick="goToHomePage()" class="homebut">Home</button>
+</div>
+
 <script src="/js/userdash.js"></script>
 
 </html>

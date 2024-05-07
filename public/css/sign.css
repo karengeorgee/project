@@ -1,12 +1,4 @@
   
-  
-  
-  
-  
-  
-  
-  
-  
 body {
   font-family: Arial, sans-serif;
   background-color: #f5f5f5;
@@ -23,35 +15,25 @@ body {
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-.field {
-  margin-bottom: 20px;
-}
-
-.Field-label {
-  font-size: 18px;
-  color: #333;
-}
-
-.required-astrerisk {
-  color: red;
-}
 
 .field-small-p {
   font-size: 14px;
-  color: #666;
+  color:whitesmoke;
 }
 
-.textfield,
+ .textfield,
 select,
 input[type="number"],
 input[type="submit"] {
   width: 100%;
   padding: 10px;
-  margin-bottom: 10px;
-  border: 1px solid #ccc;
+  margin-bottom: 10px ;
+  border: 1px solid  #333;
   border-radius: 5px;
   box-sizing: border-box;
-}
+  background: rgba(0, 0, 0, 0.5);
+  color: whitesmoke;
+} 
 
 .select p {
   font-size: 16px;
@@ -59,7 +41,7 @@ input[type="submit"] {
 }
 
 input[type="submit"] {
-  background-color: #ff9800;
+  background-color: #340d0d;
   color: #fff;
   border: none;
   cursor: pointer;
@@ -70,7 +52,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-  background-color: #e68a00;
+  background-color: #361111;
 }
 
 
@@ -79,7 +61,7 @@ input[type="submit"]:hover {
  margin-top: 100px;
  width: 350px;
  height: auto;
- background:transparent;
+ background:rgba(0, 0, 0, 0.5);
 }
 
 .Field-label {
@@ -92,29 +74,23 @@ input[type="submit"]:hover {
 }
 
 input[type="submit"] {
-  background-color:rgb(177, 139, 43);
+  background-color:#340d0d;
 }
 
 input[type="submit"]:hover {
-  background-color: goldenrod;
+  background-color:#361111;
 }
 
-.close-btn{
-  position: absolute;
-  right: 20px; 
-  top: 20px;
-  width: 30px;
-  background: #222;
-  color: #fff;
-  font-size: 25px;
-  font-weight: 600;
-  line-height: 30px;
-  text-align: center;
-  border-radius: 50%;
+.logtext{
+  color: #8b4513;
 }
+a{
+  color: #8b4513;
+}
+
 .popup{
   width: 400px;
-  background: #fff;
+  background: black;
   border-radius: 6px;
   position: absolute;
   top: 50%;
@@ -147,4 +123,18 @@ font-size: 18px;
 border-radius: 4px;
 cursor: pointer;
 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+h1{
+  color: whitesmoke;
+}
+p{
+  color: whitesmoke;
+}
+#logo {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  z-index: 1; /* Ensure the logo appears above the image */
+  width: auto; /* Adjust width relative to its container */
+  max-width: 10%; /* Maximum width as a percentage of the viewport */
 }
