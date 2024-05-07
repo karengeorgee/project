@@ -1,9 +1,17 @@
-// Function to toggle the visibility of the menu items
 function toggleMenu() {
     var menuItems = document.getElementById("menuItems");
     menuItems.classList.toggle("show");
-    
 }
+
+// Close the menu list when Contact Us or About Us is clicked
+document.querySelectorAll(".menu-items a").forEach(function(link) {
+    link.addEventListener("click", function() {
+        var menuItems = document.getElementById("menuItems");
+        if (menuItems.classList.contains("show")) {
+            toggleMenu();
+        }
+    });
+});
 
 // Initialize Flatpickr for the calendar widget
 var calendar = flatpickr("#calendar", {
