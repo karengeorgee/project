@@ -25,6 +25,7 @@ var calendar = flatpickr("#calendar", {
 document.querySelector(".book-button").addEventListener("click", function() {
     // Open the calendar
     calendar.open();
+    
 });
 
 // Create a "Done" button inside the calendar
@@ -36,7 +37,7 @@ doneButton.id = 'done-button';
 // Add an event listener to the "Done" button to close the calendar
 doneButton.addEventListener("click", function() {
     calendar.close();
-     window.location.href = "/Reservation";
+    window.location.href = "/Reservation";
 });
 
 // Append the "Done" button to the calendar container

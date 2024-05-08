@@ -4,13 +4,16 @@ function validate(){
   var b=document.getElementById('ln').value;
   var c=document.getElementById('em').value;
   var d=document.getElementById('sn').value;
-  if(a==""){
-    alert("Please enter the first name")
-   
-  }
- else if(b==""){
-   window.alert("Please enter the last name")
+  var lettersOnly = /^[A-Za-z]+$/; // Regular expression to match only letters
   
+  if (a == "") {
+    alert("Please enter the first name");
+  } else if (!a.match(lettersOnly)) {
+    alert("First name should contain only letters");
+  } else if (b == "") {
+    alert("Please enter the last name");
+  } else if (!b.match(lettersOnly)) {
+    alert("Last name should contain only letters");
   }
   else if(c==""){
     alert("Please enter the email")
@@ -38,4 +41,3 @@ function toggleMenu() {
   var menuItems = document.getElementById("menuItems");
   menuItems.classList.toggle("show");
 }
-
