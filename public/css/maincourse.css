@@ -24,8 +24,7 @@
     margin-right: -100px;
     margin-right: 20px; /* Add margin to separate the image from the text */
     margin-top: -300px;
-    margin-right: 50px;
-    border: 5px solid red;
+    border: 5px  rgba(0, 0, 0, 0.2); 
     
 }
 
@@ -74,7 +73,7 @@
     margin-right: 20px; /* Add margin to separate the image from the text */
     margin-top: 110px;
     margin-left: 500px;
-    border: 5px solid red;
+    border: 5px solid rgba(0, 0, 0, 0.2); 
 }
 
 .maincourse2-info {
@@ -121,7 +120,7 @@
    /* Adjust left margin as needed */
     margin-top: -500px;
     margin-left: 400px;
-    border: 5px solid red;
+    border: 5px solid rgba(0, 0, 0, 0.2); 
     
 }
 
@@ -167,7 +166,7 @@
     width: 350px; /* Set the width of the image */
     height: auto; /* Maintain aspect ratio */
     margin-right: 200px; /* Add margin to separate the image from the text */
-    border: 5px solid red;
+    border: 5px  rgba(0, 0, 0, 0.2); 
 }
 
 .maincourse4-info {
@@ -211,7 +210,8 @@
     margin-right: 20px; /* Add margin to separate the image from the text */
     margin-top: -550px;
     margin-left: 550px;
-    border: 5px solid red;
+    border: 5px solid rgba(0, 0, 0, 0.2); 
+     
 }
 
 .maincourse5-info {
@@ -255,7 +255,7 @@
     width: 350px; /* Set the width of the image */
     height: 220px; /* Maintain aspect ratio */
     margin-right: 20px; /* Add margin to separate the image from the text */
-    border: 5px solid red;
+    border: 5px  rgba(0, 0, 0, 0.2); 
     margin-top: -1600px;
     margin-left: 1050px;
 }
@@ -289,7 +289,7 @@
     margin-left: -1130px;
     color: white;
 
-}
+} 
 
 
 

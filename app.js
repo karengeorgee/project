@@ -53,10 +53,22 @@ app.get('/view', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'view.html'));
 });
 app.get('/myhis', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'myhis.html')  )});
+
+    res.sendFile(path.join(__dirname, 'views', 'myhis.html')  )
+});
+
+    
+
 app.get('/menu', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'menu.html'));
 });
+
+app.get('/manage_users', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'manage_users.html'));
+});
+
+
+
 // app.get('/admindash', (req, res) => {
 //     res.sendFile(path.join(__dirname, 'views', 'admindash.html'));
 // });
