@@ -28,9 +28,24 @@ background-attachment: fixed;
     <img src="/images/Untitled-1.png" alt="Logo" style="width: 100%;">
   </div>
   <div id="word-container">
-    <p><img src="/images/menu_3073727.png" alt="Menu Icon"> Menu</p>
+    <!-- <p><img src="/images/menu_3073727.png" alt="Menu Icon"> Menu</p> -->
   <h1>
       </h1>
+      <div class="white-background"></div>
+  <div class="menu-toggle" onclick="toggleMenu()">
+      <div class="bar"></div>
+      <div class="bar"></div>
+      <div class="bar"></div>
+  </div>   
+
+  <div class="menu-items" id="menuItems">
+      <a href="SJAK">Home</a>
+      <a href="mapmenu">Menu</a>
+      <a href="#about-us-section">About Us</a>
+      <a href="#contact-us-section">Contact Us</a>
+      <a href="sign">Sign up</a>
+      <a href="login">Login</a>
+  </div>
   <div id="map"></div>
   <div id="menuContainer" style="display: none;">
     <h2 id="menuTitle"></h2>
@@ -57,5 +72,7 @@ background-attachment: fixed;
 
   <script src="/js/mapmenu.js"></script>
   
+  
+
 </body>
 </html>

@@ -53,7 +53,7 @@ app.get('/view', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'view.html'));
 });
 app.get('/myhis', (req, res) => {
-    res.sendFile(path.join(__dirname, 'views', 'myhis.html'));
+    res.sendFile(path.join(__dirname, 'views', 'myhis.html')  )});
 app.get('/menu', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'menu.html'));
 });

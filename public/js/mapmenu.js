@@ -55,3 +55,8 @@ function skipGuess() {
   // showMenu(menu);
   window.location.href = "/SJAK";
 }
+
+function toggleMenu() {
+  var menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle("show");
+}

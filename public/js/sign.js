@@ -21,12 +21,19 @@ function openPopup(){
 popup.classList.add("open-popup");
 }
 function closePopup() {
-  var userType = document.querySelector('select[name="UserType"]').value;
-  if (userType === "Admin") {
+  // var userType = document.querySelector('select[name="UserType"]').value;
+  var a=document.getElementById('un').value;
+var b=document.getElementById('pas').value;
+ 
+  if (a === "admin") {
     window.location.href = "/bgrb"; // Redirect to admin dashboard
-  } else if (userType === "User") {
+  } else if (b === "User") {
     window.location.href = "/userdash"; // Redirect to user dashboard
   } 
+}
+function toggleMenu() {
+  var menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle("show");
 }
 
 
