@@ -34,3 +34,8 @@ function closePopup(){
   window.location.href = "/SJAK";
 }
 
+function toggleMenu() {
+  var menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle("show");
+}
+

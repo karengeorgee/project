@@ -26,17 +26,27 @@
 #about-us-section{
     padding: 20px;
     background-color:rgba(0, 0, 0, 0.5);
-    border-top: 1px solid #ccc;
+    border-top: 1px solid ;
     /* margin-top: 50%; */
+    width: 50%;
+margin-left: 25%;
 }
 #contact-us-section {
     padding: 20px;
     background-color:rgba(0, 0, 0, 0.5);
-    border-top: 1px solid #ccc;
-
+    border-top: 1px solid #333;
+width: 50%;
+margin-left: 25%;
     
 }
-
+.facimg{
+    width: 15px;
+    height: 15px;
+}
+.instaimg{
+width: 15px;
+height: 15px;
+}
 
 
 #about-us-section h2,

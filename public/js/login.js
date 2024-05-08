@@ -37,6 +37,11 @@ function closePopup() {
 }
 
 
+function toggleMenu() {
+  var menuItems = document.getElementById("menuItems");
+  menuItems.classList.toggle("show");
+}
+
   //  alert("You have logged in successfully!");
   //     window.location.href = "SJAK.html"; // Redirect to SJAK page
   //     return false; // Prevent form submission
