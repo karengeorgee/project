@@ -106,9 +106,13 @@
 .homebut:hover{
   background-color: #361111;
 }
-h1{
-color: whitesmoke;
-}
+h1 {
+  text-align: center;
+  color: wheat;
+  padding-top: 200px;
+  font-family: 'Averia Libre', sans-serif;
+  margin-bottom: 20px;
+  }
 h2{
 color: whitesmoke;
 }

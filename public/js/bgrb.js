@@ -27,32 +27,52 @@ function showManageUsers() {
 }
 
 function showManageReservations() {
-    var manageUsersTable = document.getElementById("manageUsersTable");
-    var manageReservationsTable = document.getElementById("manageReservationsTable");
-    manageUsersTable.style.display = "none";
-    manageReservationsTable.style.display = "block";
-    menuItems.classList.remove("show"); // Close the menu
+  var manageUsersTable = document.getElementById("manageUsersTable");
+  var manageReservationsTable = document.getElementById("manageReservationsTable");
+  manageUsersTable.style.display = "none";
+  manageReservationsTable.style.display = "block";
+  menuItems.classList.remove("show"); // Close the menu
 
-    // Populate reservations table with dummy data (You can replace this with your actual data)
-    var reservationsTableBody = document.getElementById("reservationsTableBody");
-    reservationsTableBody.innerHTML = ''; // Clear existing rows
-    for (var i = 1; i <= 10; i++) {
-        var reservationRow = `
-          <tr>
-            <td>Reservation ${i}</td>
-            <td>John Doe</td>
-            <td>
-              <button>Edit</button>
-              <button>Delete</button>
-            </td>
-          </tr>
-        `;
-        reservationsTableBody.innerHTML += reservationRow;
-      }
-      
-      // Scroll to manageReservationsTable
-      manageReservationsTable.scrollIntoView({ behavior: 'smooth' });
+  // Populate reservations table with dummy data (You can replace this with your actual data)
+  var reservationsTableBody = document.getElementById("reservationsTableBody");
+  reservationsTableBody.innerHTML = ''; // Clear existing rows
+  var reservationsData = [
+    { reservationNumber: "001", name: "John Doe" },
+    { reservationNumber: "002", name: "Jane Smith" },
+    { reservationNumber: "003", name: "Michael Johnson" },
+    { reservationNumber: "004", name: "Ahmed Tamer" },
+    { reservationNumber: "005", name: "Karen" },
+    { reservationNumber: "006", name: "Tamer" },
+    { reservationNumber: "007", name: "Selvia" },
+    { reservationNumber: "008", name: "Jumana" },
+  ];
+
+  for (var i = 0; i < reservationsData.length; i++) {
+    var randomNumber = Math.floor(Math.random() * 2); // Generates either 0 or 1
+    var s = Math.floor(Math.random() * 20) + 1; // Generates a random number between 1 and 20
+    var reservation = reservationsData[i];
+    var location = randomNumber === 0 ? "indoor" : "outdoor";
+    
+    var reservationRow = `
+      <tr>
+        <td>${reservation.reservationNumber}</td>
+        <td>${reservation.name}</td>
+        <td>${location}</td>
+        <td>Number of seats: ${s}</td>
+        <td>
+          <button>Edit</button>
+          <button>Delete</button>
+        </td>
+      </tr>
+    `;
+    reservationsTableBody.innerHTML += reservationRow;
   }
+
+
+  
+  // Scroll to manageReservationsTable
+  manageReservationsTable.scrollIntoView({ behavior: 'smooth' });
+}
   
     
 
