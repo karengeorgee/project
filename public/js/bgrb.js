@@ -22,6 +22,8 @@ function showManageUsers() {
         </tr>`;
     }
     usersTableBody.innerHTML = tableBodyHTML; // Set the table body HTML once
+     // Scroll to manageUsersTable
+     manageUsersTable.scrollIntoView({ behavior: 'smooth' });
 }
 
 function showManageReservations() {
@@ -46,9 +48,14 @@ function showManageReservations() {
           </tr>
         `;
         reservationsTableBody.innerHTML += reservationRow;
-    }
+      }
+      
+      // Scroll to manageReservationsTable
+      manageReservationsTable.scrollIntoView({ behavior: 'smooth' });
+  }
+  
     
-}
+
 function showManageItems() {
     var manageUsersTable = document.getElementById("manageUsersTable");
     var manageReservationsTable = document.getElementById("manageReservationsTable");
@@ -77,7 +84,25 @@ function showManageItems() {
           </tr>
         `;
         itemsTableBody.innerHTML += itemRow;
-    }
+      }
+  
+      // Scroll to manageItemsTable
+      manageItemsTable.scrollIntoView({ behavior: 'smooth' });
+  }
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  slides[slideIndex-1].style.display = "block";  
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
 }
+
 
 

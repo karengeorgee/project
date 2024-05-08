@@ -34,7 +34,6 @@ function startGuessing(countryName, menu) {
   guessInput.setAttribute('data-menu', menu);
 }
 
-
 function checkGuess() {
   const guessInput = document.getElementById('guessInput');
   const guess = guessInput.value.trim().toLowerCase();
@@ -42,16 +41,16 @@ function checkGuess() {
   
   if (guess === correctCountry) {
     alert('Congratulations! You guessed it right. You get a 20% discount coupon!.');
-    const menu = guessInput.getAttribute('data-menu');
-    showMenu(menu);
+    window.location.href = "/menu"; // Redirect to another page after correct guess
   } else {
     alert('Sorry, that\'s not correct. Try again!');
   }
 }
 
+
 function skipGuess() {
   // const guessInput = document.getElementById('guessInput');
   // const menu = guessInput.getAttribute('data-menu');
   // showMenu(menu);
-  window.location.href = "/SJAK";
+  window.location.href = "/menu";
 }

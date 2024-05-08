@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="/css/bgrb.css">
+  <link href="https://fonts.googleapis.com/css2?family=Averia+Libre:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Libre+Franklin:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
   <title>Welcome to the Admin Dashboard</title>
 </head>
 <body>
@@ -14,6 +16,17 @@
     <img src="/images/Untitled-1.png" alt="Logo" style="width: 100%;">
   </div>
 </header>
+<div class="slideshow-container">
+  <div class="mySlides fade">
+    <img src="/images/SachiHeliopolisInterior1-ezgif.com-webp-to-jpg-converter.jpg" style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="/images/IMG_1933-ezgif.com-webp-to-jpg-converter.jpg "style="width:100%">
+  </div>
+  <div class="mySlides fade">
+    <img src="/images/62f845_c977822bfe59464a9fdfe3728d899609mv2-ezgif.com-webp-to-jpg-converter.jpg "style="width:100%">
+  </div>
+</div>
 <style>
   body {
       font-family: 'Poppins', sans-serif;
@@ -22,10 +35,26 @@
       padding: 0;
       background-position: center;
       background-attachment: fixed;
-      background-image: url("/images/f3847d_da686092542e48e5a962f3b1e69456d5mv2-ezgif.com-webp-to-jpg-converter.jpg");
+      background-image: url("/images/WhatsApp Image 2024-05-08 at 3.53.25 PM.jpeg");
       background-size: cover; /* Cover the entire background */
       background-repeat: no-repeat; /* Prevent the image from repeating */
   }
+  .slideshow-container {
+      max-width: 1000px;
+      position: relative;
+      margin: auto;
+    }
+    .mySlides {
+      display: none;
+    }
+    .fade {
+      animation-name: fade;
+      animation-duration: 1.5s;
+    }
+    @keyframes fade {
+      from {opacity: .4} 
+      to {opacity: 1}
+    }
 </style>
 
 <div class="white-background"></div>
@@ -36,9 +65,11 @@
 </div>   
 
 <div class="menu-items" id="menuItems">
+  <a href="SJAK">Home</a>
   <a href="#" onclick="showManageUsers()">Manage Users</a>
   <a href="#" onclick="showManageReservations()">Manage Reservations</a>
   <a href="#" onclick="showManageItems()">Manage Items</a>
+  
 </div>
 
 <div id="manageUsersTable" class="container" style="display: none;">
