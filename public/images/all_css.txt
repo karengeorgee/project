@@ -33,7 +33,7 @@ body {
     top: 5%; /* Place the top of the title at the vertical center */
     left: 50%; /* Place the left of the title at the horizontal center */
     transform: translate(-50%, -50%); /* Adjust for exact centering */
-    color:whitesmoke;
+    color:white;
     justify-content: center;
     font-family:'Times New Roman', Times, serif;
 }
@@ -86,7 +86,7 @@ body {
 #appetizer-menu h1 {
     font-size: 40px; /* Adjust font size as needed */
     text-align: center; /* Center align the text */
-    color: darksalmon; /* Set text color */
+    color: red; /* Set text color */
     margin-top: 20px; /* Add margin on the top */
     margin-bottom: 20px; /* Add margin on the bottom */
     font-family:'Times New Roman', Times, serif;
@@ -469,7 +469,7 @@ body {
 #main-dish-menu h1 {
     font-size: 40px;
     font-weight: bold;
-    color: darksalmon; /* Change color to your preference */
+    color: red; /* Change color to your preference */
     text-align: center;
   /* Add some space below the heading */
     margin-top: 20px;
@@ -764,7 +764,7 @@ body {
 
 .menu h2 {
     font-size: 40px; /* Adjust the font size as needed */
-    color:darksalmon; /* Set the color of the text */
+    color:red; /* Set the color of the text */
     text-align: center; /* Center-align the text */
     margin-bottom: 200px; /* Add some bottom margin for spacing */
     justify-content: center;

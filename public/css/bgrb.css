@@ -22,6 +22,8 @@ h1 {
 text-align: center;
 color: wheat;
 padding-top: 200px;
+font-family: 'Averia Libre', sans-serif;
+margin-bottom: 20px;
 }
 
 /* Reset default browser styles for the table */

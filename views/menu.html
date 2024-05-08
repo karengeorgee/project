@@ -28,7 +28,7 @@
 <body>
     <div class="container-wrapper">
         <div class="container">
-            <h1 class="title">Our Menu</h1>
+            <h1 class="title"> Our Cuisine</h1>
             <!-- Appetizers -->
             <div class="appetizers-box" onclick="toggleMenu('appetizer-menu'); scrollToSection('appetizer-menu')">
                 <div class="box-content">
@@ -106,7 +106,7 @@
 
 <!-- Main Dish Menu -->
 <div id="main-dish-menu">
-    <h1> Main Course Menu</h1>
+    <h1 style="color: darksalmon;"> Main Course Menu</h1>
     <ul>
         <li class="main-course-item1">
             <img src="/images/salmon.jpg" alt="steak">
@@ -169,7 +169,7 @@
         <!-- Your drinks menu items will go here -->
         <div class="section drinks-section">
             <!-- Example drink items -->
-            <h2>Drinks Menu</h2>
+            <h2 style="color:darksalmon;">Drinks Menu</h2>
             <ul>
                     <li class="drink-item1">
                         <img src="/images/coctail.jpg" alt="coctail">
@@ -212,44 +212,44 @@
     </div>
 
     <script>
-      function toggleMenu(menuId) {
-    console.log('Toggling menu:', menuId);
-    var menu = document.getElementById(menuId);
-    menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
-}
-
-// Function to scroll to a specific section
-function scrollToSection(sectionId) {
-    console.log('Scrolling to section:', sectionId);
-    var section = document.getElementById(sectionId);
-    if (section) {
-        section.scrollIntoView({ behavior: 'smooth' });
-    }
-}
-
-// Function to scroll to the drinks section
-function scrollToDrinksSection() {
-    console.log('Scrolling to drinks section');
-    var drinkItem1 = document.querySelector('.drink-item1');
-    if (drinkItem1) {
-        drinkItem1.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
-}
-
-
-
-
-// Function to handle window resize or orientation change
-function handleResize() {
-    // Add your responsive logic here
-    // You might want to adjust the behavior of the menu or other elements based on the window size or orientation
-}
-
-// Event listener for window resize
-window.addEventListener('resize', handleResize);
-
-// Event listener for orientation change
-window.addEventListener('orientationchange', handleResize);
-    </script>
+        function toggleMenu(menuId) {
+      console.log('Toggling menu:', menuId);
+      var menu = document.getElementById(menuId);
+      menu.style.display = (menu.style.display === "none" || menu.style.display === "") ? "block" : "none";
+  }
+  
+  // Function to scroll to a specific section
+  function scrollToSection(sectionId) {
+      console.log('Scrolling to section:', sectionId);
+      var section = document.getElementById(sectionId);
+      if (section) {
+          section.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      }
+  }
+  
+  // Function to scroll to the drinks section
+  function scrollToDrinksSection() {
+      console.log('Scrolling to drinks section');
+      var drinkItem1 = document.querySelector('.drink-item1');
+      if (drinkItem1) {
+          drinkItem1.scrollIntoView({ behavior: 'smooth', block: 'start', inline: 'nearest' });
+      }
+  }
+  
+  
+  
+  
+  // Function to handle window resize or orientation change
+  function handleResize() {
+      // Add your responsive logic here
+      // You might want to adjust the behavior of the menu or other elements based on the window size or orientation
+  }
+  
+  // Event listener for window resize
+  window.addEventListener('resize', handleResize);
+  
+  // Event listener for orientation change
+  window.addEventListener('orientationchange', handleResize);
+      </script>
 </body>
 </html>
