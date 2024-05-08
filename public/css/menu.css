@@ -43,7 +43,7 @@ body {
     height: 300px; /* Set desired height */
     border-radius: 10px; /* Add border radius for rounded corners */
     overflow: hidden; /* Hide overflowing content */
-    margin-top: 250px;
+    margin-top: 152px;
     transition: transform 0.5s ease;
     position: relative;
     margin-left: -650px;
@@ -107,7 +107,7 @@ body {
     height: auto; /* Maintain aspect ratio */
     margin-right: 10px; /* Add margin to separate the image from the text */
     margin-top: -500px; /* Adjust top margin as needed */
-    border: 5px solid black; /* Add border to the image */
+    /* border: 5px solid black; Add border to the image */
 }
 
 .appetizer1-info {
@@ -423,7 +423,7 @@ body {
     transition: background-color 0.3s;
  /* Adjust this according to your layout */
     transition: transform 0.5s ease;
-    margin-top:-8300px;
+    margin-top:-8050px;
     margin-left: 1100px;
 }
 
