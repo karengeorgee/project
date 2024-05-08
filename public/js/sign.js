@@ -8,7 +8,7 @@ var b=document.getElementById('pas').value;
    
   }
  else if(b==""){
-   window.alert("Please enter the last name")
+   window.alert("Please enter the password")
   
   }
   else{
@@ -27,9 +27,16 @@ var b=document.getElementById('pas').value;
  
   if (a === "admin") {
     window.location.href = "/bgrb"; // Redirect to admin dashboard
-  } else if (b === "User") {
-    window.location.href = "/userdash"; // Redirect to user dashboard
+  } else if (a === "user") {
+    window.location.href = "userdash"; // Redirect to user dashboard
   } 
+  else if(a==="Admin"){
+    window.location.href = "/bgrb";
+  }
+  else if(a==="User"){
+    window.location.href = "userdash";
+  }
+
 }
 function toggleMenu() {
   var menuItems = document.getElementById("menuItems");

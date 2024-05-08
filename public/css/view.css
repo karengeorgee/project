@@ -19,3 +19,37 @@
     /* background:rgba(0, 0, 0, 0.5); */
 
 }
+.container{
+  text-align: center;
+  width: 80%;
+  height: 25%;
+  background-color: rgba(0, 0, 0, 0.5) ;
+  margin-left: 10%;
+  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr)); /* Automatically fit and adjust columns */
+}
+.search-bar{
+
+  margin-left: 43%;
+}
+.test1{
+  border-color: white ;
+  background-color: aqua;
+  width: 25%;
+  height: 173.2px;
+  
+}
+.test2{
+  border-color: white ;
+  background-color: aqua;
+  width: 25%;
+  height: 173.2px;
+  
+  
+}
+.test3{
+  border-color: white ;
+  background-color: aqua;
+  width: 25%;
+  height: 173.2px;
+  
+}

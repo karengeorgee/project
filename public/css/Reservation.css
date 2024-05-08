@@ -292,3 +292,30 @@ height: 15px;
   margin-bottom: 10px;
 }
 
+@media screen and(max-width:600px){
+
+  #about-us-section{
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-top: 1px solid ;
+    width: 50%;
+  margin-left: 25px;
+  }
+  #contact-us-section {
+    padding: 20px;
+    background-color:rgba(0, 0, 0, 0.5);
+    border-top: 1px solid #333;
+  width: 50%;
+  margin-left: 25px;
+    
+  }
+  
+#about-us-section p,
+#contact-us-section p {
+  font-size: 10px;
+  line-height: 1.6;
+  color: whitesmoke;
+  font-family: 'Averia Libre', sans-serif;
+
+}
+}
