@@ -58,9 +58,11 @@ app.get('/myhis', (req, res) => {
 app.get('/menu', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'menu.html'));
 });
+
 app.get('/manage_users', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'manage_users.html'));
 });
+
 
 
 // app.get('/admindash', (req, res) => {
